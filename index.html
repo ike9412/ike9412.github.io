@@ -6,15 +6,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>屁眼(*´艸`*)</title>
+<title>歆ㄉ屁眼(*´艸`*)</title>
 
 <style>
-
-    body {
+    body, html {
+        margin:0;
+        padding:0;
+        font-family: ”微軟正黑體“, sans-serif;
+        background-color:#222;
+        
+    }
+    
+    
+    .sidebar {
+        position:fixed;
+        left:0;
+        top:0;
+        width:200px;
+        height:100%;
+        background-color:#1a1a1a;
+        padding-top:50px;
+        box-shadow:2px 0px 10px rgba(0,0,0,0.8);
+    }
+    
+    .main content {
+        margin-left: 250px;
+        padding: 50px;
+        min-height: 100vh;
+        box-sizing: border-box;
+    
         background-image: url('https://i.pinimg.com/736x/8e/61/e7/8e61e7ce2dcbfc5230adbd3c6fa171e2.jpg');
         background-size: cover; 
         background-position: center; 
-        background-attachment: fixed;
+        
+        color:#ffffff;
+        
+    }
+        
+        
             
         margin-top: 50px;
     
@@ -28,7 +57,24 @@
 </head>
     
 <body>
+
+<div class="sidebar'>
+
+    <a herf="#home" >首頁</a>
+    <a herf="#about" >about me</a>
+    <a herf="#projects" >作品</a>
+    <a herf="#contect" >contect me</a>
+    
+</div>
+
+<div class="main content" id="home">
+
     <img src="https://i.pinimg.com/736x/a6/e9/c2/a6e9c2dbfe95eb99fa0c95a354ca37b7.jpg" class="profile-pic">
-    <h1>大家好我是夏歆</h1>
+    <h1>夏歆</h1>
+    <p>！！！！！！！！！</p>
+    
+</div>
     
 </body>
+
+</html>
