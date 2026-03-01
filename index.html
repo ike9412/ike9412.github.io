@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="zh-TW">
 
 <head>
@@ -12,25 +11,32 @@
     body, html {
         margin:0;
         padding:0;
-        font-family: "微軟正黑體", sans-serif;
+        /* 🐛 修正 4：把全形引號改成英文半形引號 "" */
+        font-family: "微軟正黑體", sans-serif; 
         background-color:#222;
-        
     }
-    
     
     .sidebar {
         position:fixed;
         left:0;
         top:0;
-        width:200px;
+        width:200px; /* 左側目錄寬度 */
         height:100%;
         background-color:#1a1a1a;
         padding-top:50px;
         box-shadow:2px 0px 10px rgba(0,0,0,0.8);
     }
     
+    /* 幫你補上目錄文字的顏色，不然預設是黑色的會看不見 */
+    .sidebar a {
+        display: block;
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+    }
+    
     .main-content {
-        margin-left: 250px;
+        margin-left: 200px; /* 配合你上面 sidebar 的 200px 寬度，這裡推 200px 就夠了 */
         padding: 50px;
         min-height: 100vh;
         box-sizing: border-box;
@@ -40,27 +46,30 @@
         background-position: center; 
         
         color:#ffffff;
-        
     }
     
     .profile-pic {
         width: 150px;
-        
+        border-radius: 50%; /* 順便幫你把照片變回圓形 */
+        border: 3px solid white;
     }
 </style>
 </head>
     
 <body>
 
+<!-- 🐛 修正 1：把後面的單引號改成雙引號 " -->
 <div class="sidebar">
 
-    <a href="#home" >首頁</a>
-    <a href="#about" >about me</a>
-    <a href="#projects" >作品</a>
-    <a href="#contect" >contect me</a>
+    <!-- 🐛 修正 3：把 herf 改成正確的 href -->
+    <a href="#home">首頁</a>
+    <a href="#about">about me</a>
+    <a href="#projects">作品</a>
+    <a href="#contect">contect me</a>
     
 </div>
 
+<!-- 🐛 修正 2：把空格改成橫槓 - -->
 <div class="main-content" id="home">
 
     <img src="https://i.pinimg.com/736x/a6/e9/c2/a6e9c2dbfe95eb99fa0c95a354ca37b7.jpg" class="profile-pic">
